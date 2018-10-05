@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+header{
+  padding: 10px 20px;
+  background-color: darkslategrey; color: white;
+  margin: 0;
+}
+footer{
+  padding: 10px 20px;
+  background-color: darkslategrey; color: white;
+  text-align: center;
+}
+h1{
+  font-family: 'Srisakdi', cursive;
+}
+img {
+  width: 300px;
+  border-radius: 10px 100px / 120px;
+  /* float: left; */
+  margin-right: 100px;
+}
+a:link{
+  color: grey;
+}
+a:hover{
+  color: black;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+#work{
+  padding: 10px 20px;
+}
+#education{
+  background-color: lightgrey;
+  padding: 10px 20px;
+}
+.content-wrap{
+  max-width: 950px;
+  margin: 0 auto;
+  /* overflow: auto; */
+}
+.col-wide {
+  float: left;
+  width: 70%;
+  padding-right: 20px;
+  min-height: 100px;
+}
+.col-narrow {
+  float: left;
+  width: 30%;
+  min-height: 200px;
+}
+.company{
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.job{
+  margin-bottom: 0;
+}
