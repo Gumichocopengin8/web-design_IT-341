@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Navigation</title>
+		<style type="text/css">
+			body {
+				font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+				margin: 0;
+				padding: 0;
+			}
+			/* 1.   remove list style and padding from the list */
+			nav ul {
+				list-style: none;
+				padding: 0;
+			}	
+				
+			/* 2.  Style The Dropdown Button */
+			.dropbtn {
+			  background-color: #4CAF50;
+			  color: white;
+			  padding: 10px;
+			  font-size: 16px;
+			  border: dotted 1px black;
+			  cursor: cell;
+				margin: 0;
+			}
+				
+			/* 3.  Set up our dropdown buttons to be horizontal */
+			.dropdown {
+			  position: relative;
+			  display: inline-block;
+				margin: 0;
+				padding: 0;
+			}
+				
+			/* 4.   Set up the dropdown menus Dropdown Content (Hidden by Default) */
+			.dropdown-content {
+			  position: absolute;
+				margin-top: 10px;
+			  background-color: #f9f9f9;
+			  min-width: 120px;
+			  z-index: 1;
+			}	
+			
+			/* 5.  Style what the links in your dropdown look like */
+			.dropdown-content a {
+			  color: black;
+			  padding: 10px;
+			  text-decoration: none;
+			  display: block;
+			}
+				
+			/* 6.  Change color of dropdown links on hover */
+			.dropdown-content a:hover {
+				background-color: darkgray;
+			}
+				
+			/* 7.  Change the background color of the dropdown button when the button or content is hovered over */
+			.dropdown:hover .dropbtn {
+			  background-color: #3e8e41;
+			}	
+			
+			/* 8.  Hide the dropdown menus */	
+			.dropdown-content {
+				display: none;
+			}
+				
+			/* 9.  Show the dropdown menu on hover */
+			.dropdown:hover .dropdown-content {
+			  display: block;
+			}
+				
+			/* 10.  Center the navigation on the page */
+			nav {
+				text-align: center;
+				background-color: #4CAF50;
+				padding: 10px 0;
+			}
+
+			.dropbtn {
+				border: none;
+			}
+
+			/* 11.  Remove the margin from ul to line things up correctly */
+			nav ul {
+				margin: 0;
+			}
+
+			/* 12.  Fix the nav to the top of the page when user scrolls */
+			/* Use https://www.lipsum.com/ to generate several paragraphs of content */
+			nav {
+				position: fixed;
+				width: 100%;
+				top: 0;
+			}
+			
+			main {
+				padding-top: 50px;
+				margin: 50px;
+			}
+				
+			/* 13.  Add an anchor within your page and make one of your nav items jump to that area */	
+			
+			/* add anchor in a paragrah*/
+			#anchor {
+				margin-top: -40px;
+				padding-top: 40px;
+			}
+			
+			/* 14.  Add a footer element and position it at the bottom of the page */	
+			footer {
+				position: fixed;
+				width: 100%;
+				bottom: 0;
+				background-color: #4CAF50;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<ul>
+			  <li class="dropdown">
+				  <span class="dropbtn">Dropdown</span>
+				  <ul class="dropdown-content">
+					  <li><a href="#">Link 1</a></li>
+					  <li><a href="#anchor">Link 2</a></li>
+					  <li><a href="#">Link 3</a></li>
+				  </ul>
+			  </li>
+				<li class="dropdown">
+				  <span class="dropbtn">Dropdown</span>
+				  <ul class="dropdown-content">
+					  <li><a href="#">Link 1</a></li>
+					  <li><a href="#">Link 2</a></li>
+					  <li><a href="#">Link 3</a></li>
+				  </ul>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<p>Content here</p>
+			<div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac dui a massa mollis tempus et fringilla lectus. Donec finibus risus ut pulvinar egestas. Vestibulum ac placerat justo, eget efficitur dui. Etiam ultricies dictum ullamcorper. Praesent faucibus augue ut nulla molestie fringilla. Donec vel ante rutrum, pellentesque elit ut, tincidunt dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis dui convallis, suscipit tortor sit amet, pellentesque mi. Aliquam justo tellus, ullamcorper at lacus ut, tristique varius erat. Suspendisse fringilla nulla lacus, ut tempus elit facilisis eget. Etiam fringilla lobortis vehicula. Etiam sollicitudin ut elit non congue.</p>
+        <p>Ut et velit vitae turpis vestibulum euismod non nec dui. Proin nisi leo, imperdiet sed risus luctus, rutrum tincidunt nulla. Aenean vehicula nulla nec efficitur finibus. Mauris rhoncus velit metus, eleifend hendrerit velit sollicitudin id. Cras ultrices tincidunt arcu, et semper urna iaculis quis. Maecenas pharetra ullamcorper ex id vestibulum. Nam venenatis ipsum et ante sagittis, rhoncus ullamcorper justo bibendum. Vestibulum eros ipsum, auctor ut fringilla a, varius a mi.</p>
+        <p>Ut elit orci, mollis semper neque id, varius ullamcorper urna. Fusce auctor efficitur dolor in scelerisque. Duis nec lorem vitae ex condimentum aliquet luctus sed elit. Pellentesque et nunc sit amet lacus finibus accumsan. Vivamus varius efficitur erat sit amet blandit. Vivamus consequat, massa id pellentesque fermentum, nulla lectus lobortis orci, porttitor convallis lacus neque in odio. Mauris euismod augue mauris. Vestibulum sollicitudin odio ac urna vulputate sagittis. Donec non lectus nunc. Pellentesque est sem, facilisis et ultricies eu, venenatis id tellus. Suspendisse eu erat rhoncus, maximus risus vitae, aliquam odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis fermentum est non convallis.</p>
+        <p>Aenean pretium neque quis risus auctor, vel lacinia velit tincidunt. Phasellus eros leo, scelerisque ut magna eleifend, elementum auctor arcu. Mauris molestie quis augue eget volutpat. Maecenas egestas sollicitudin est, eget faucibus lectus rutrum non. Suspendisse nisi est, sodales vel consectetur quis, condimentum in massa. Suspendisse at interdum nibh. Cras ac vehicula ipsum, eget dignissim dolor. Ut consequat sollicitudin turpis, ac porta enim condimentum nec. Fusce iaculis libero metus, vitae dignissim nibh egestas non. Phasellus at justo vel eros placerat lobortis at eget massa. Aenean justo lectus, lobortis eu condimentum et, faucibus eget elit. Aliquam sodales purus quis mauris porta sollicitudin. Fusce nibh lacus, euismod vel lobortis vitae, lobortis ac nisi. Nulla eu dui vitae felis sodales placerat. Nullam eget pellentesque nisl, eleifend bibendum turpis. Nulla euismod metus risus, quis efficitur lacus imperdiet a.</p>
+        <p>Sed dui nunc, maximus vel lorem et, condimentum porttitor velit. Proin at lacus augue. Cras posuere metus a augue faucibus, id egestas tortor dignissim. Curabitur ac tempor velit. Sed id dolor arcu. Morbi eleifend egestas blandit. In consequat odio elit, at porta nisl scelerisque placerat. Sed elit erat, rutrum eget tellus at, viverra auctor dui. Etiam lacinia turpis ligula, in posuere metus iaculis ac. Suspendisse at eros faucibus, accumsan lectus ac, tincidunt arcu. Sed ultrices malesuada pretium. Praesent hendrerit leo id aliquam accumsan. Ut ullamcorper bibendum congue. Sed nulla ante, tincidunt in orci vel, rhoncus posuere ligula. Morbi iaculis at erat sed consectetur.</p>
+        <p id="anchor">Donec facilisis mi nisi, id suscipit libero malesuada ac. Suspendisse et nibh tempus, pharetra orci at, ornare turpis. Nullam eget interdum lorem. Maecenas id sagittis lorem, vel condimentum lorem. Nullam quis quam porttitor, eleifend quam a, posuere ligula. Nunc quis quam id purus ultricies mollis. Vestibulum sed augue at est luctus bibendum. In scelerisque nisi at metus ullamcorper, in faucibus justo aliquam. Phasellus gravida ipsum nisi, at luctus risus porttitor sit amet. Aliquam ligula lectus, placerat vel iaculis eu, dictum sed lectus.</p>
+        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse ullamcorper sagittis magna nec vestibulum. Curabitur at facilisis orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lectus lectus, porttitor quis ex a, rutrum volutpat est. Nam justo mi, dictum nec convallis in, tincidunt vitae risus. Ut porttitor malesuada purus at convallis. Maecenas vulputate felis sapien, ut pretium augue bibendum a.</p>
+        <p>Suspendisse sed lacinia nisi, ut condimentum magna. Quisque non urna eu justo feugiat dapibus eu vitae nisl. Proin mollis nibh nulla, et laoreet mi bibendum posuere. Nam non neque eu est maximus ullamcorper quis nec quam. Curabitur semper eu ipsum a dictum. Praesent tristique dui at ex pretium lacinia. Suspendisse egestas, nibh sit amet vehicula tristique, nisi elit pellentesque justo, a pellentesque libero ante id purus. Aliquam semper ipsum sit amet venenatis placerat. Ut mollis mi magna, sit amet efficitur mauris commodo sed. Suspendisse commodo ipsum ac orci viverra viverra non vitae augue. Aliquam interdum rhoncus mauris, ut sollicitudin leo imperdiet id. Proin ac magna a eros sollicitudin varius.</p>
+        <p>Mauris vel nunc justo. Ut molestie tellus sit amet justo convallis, ornare sagittis risus scelerisque. Sed eu ex ut lorem hendrerit congue et sed felis. Duis pretium sagittis ligula ultrices sagittis. Cras tortor mauris, vestibulum ac dapibus ut, eleifend sed ligula. Pellentesque tristique blandit mollis. Sed auctor nunc nisl, sed euismod magna rutrum ut. Ut gravida pharetra tortor, in sollicitudin ante varius et. In hac habitasse platea dictumst. Ut ultricies, mi sed venenatis vehicula, ante lectus tristique leo, quis rutrum lorem turpis at massa. Aliquam condimentum risus arcu, quis mattis nisi cursus at. Vivamus gravida augue ac eros volutpat laoreet. Aliquam rutrum vehicula facilisis. Praesent suscipit dolor ac neque auctor posuere.</p>
+        <p >Praesent eu vehicula elit, id maximus urna. Sed volutpat nisi sit amet dignissim pulvinar. Mauris dictum consequat eros, quis pellentesque felis vulputate in. Morbi tempus velit et lacus semper viverra. Aenean lorem risus, pharetra eu elementum at, fermentum non nisi. Vestibulum iaculis urna luctus ipsum euismod blandit. Nunc imperdiet ligula imperdiet, sollicitudin lorem nec, feugiat sem. Etiam ultrices ipsum tellus. Suspendisse laoreet est commodo tellus luctus imperdiet.</p>
+        <p>Vestibulum at justo leo. Etiam iaculis augue sed nunc semper eleifend. Aliquam enim quam, finibus in tempus non, euismod sagittis magna. Phasellus pulvinar efficitur tincidunt. Aenean quam nunc, maximus in ante in, convallis congue nunc. Fusce porttitor rhoncus mi in suscipit. Nam ac vestibulum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque quis sodales lorem, at tincidunt nibh. Maecenas et leo finibus, faucibus urna et, pulvinar justo. Curabitur ultrices tortor quis risus suscipit vestibulum. Proin scelerisque neque ex, eget egestas sem volutpat id. Nullam consectetur, nunc aliquet consectetur finibus, felis eros ornare massa, eu suscipit magna neque vitae ex. Donec sagittis vel purus et venenatis. Quisque vestibulum erat nisi, nec ultrices ex tempor at.</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer ut massa justo. Fusce vel ex tortor. Morbi lorem neque, scelerisque sed dui quis, venenatis rhoncus lorem. Aliquam erat volutpat. Sed in lacinia risus. Phasellus venenatis pellentesque sodales. Cras vel elementum mauris. Suspendisse potenti. Sed rhoncus turpis augue, in tincidunt turpis fringilla eget. Quisque eget bibendum odio. Donec in turpis vulputate, eleifend orci ac, ornare enim. Aliquam vel semper dui. Sed finibus quis erat sed fringilla. Curabitur lacus nibh, commodo et neque sed, commodo gravida nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        <p>Nulla aliquam arcu eget arcu condimentum, sed viverra velit feugiat. Aenean odio lorem, fringilla dignissim nibh sed, maximus suscipit lorem. Sed tortor metus, interdum non maximus sit amet, ultrices at sapien. Vestibulum tristique velit non accumsan accumsan. Integer viverra vestibulum congue. Proin imperdiet nisi ultricies est pulvinar, ut vestibulum magna imperdiet. Cras volutpat libero sit amet est mattis rhoncus. Nam ornare sit amet magna at mollis.</p>
+        <p>Cras a elit aliquet, hendrerit mi in, suscipit est. Etiam sollicitudin, lacus non blandit porta, tortor lacus finibus sapien, vel lacinia ante sapien ut sem. In suscipit diam lorem, ut ultrices nisi tincidunt vel. Sed non est lacinia, volutpat ligula quis, suscipit lectus. Nulla diam nisl, ornare nec erat eu, laoreet tristique justo. Fusce lacus mi, tempus ut elit et, viverra lobortis enim. In vel consectetur purus, a dictum odio. Donec quis neque nec erat dapibus efficitur.</p>
+        <p>Integer finibus risus diam, eget venenatis purus sollicitudin et. Nulla vel ultricies massa. Ut sed sem sed turpis mattis luctus sit amet sit amet odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque erat urna, finibus eu eros eu, hendrerit pellentesque orci. Ut id aliquam ligula. Morbi nec diam sollicitudin, aliquet tellus quis, aliquet odio. Donec tristique auctor neque, sit amet commodo orci rhoncus id. Donec pharetra molestie ante, ac tempus velit sagittis id. Fusce tristique orci lorem, sit amet tincidunt ipsum vestibulum vitae. Fusce gravida sagittis dui vel laoreet. Nam arcu dolor, pretium eu volutpat sed, posuere sit amet tellus. Suspendisse et sagittis enim, quis consequat augue. Aliquam placerat laoreet magna non fermentum. Morbi lacinia dignissim arcu, quis venenatis neque. Donec id porttitor nisi.</p>
+			</div>
+		</main>
+		<footer>
+			<div>Put your copyright here.</div>
+		</footer>	
+	</body>
+</html>
