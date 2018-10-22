@@ -1,0 +1,16 @@
+#main {
+  width: 100vw;
+  height: 500px;
+  margin: 54px auto 0 auto;
+  background: pink;
+}
+.main-video {
+  width: inherit;
+  height: inherit;
+  margin: auto;
+}
+.empty {
+  margin: 10px 20px 0px 20px;
+  width: 250px;
+  height: 0px;
+}
