@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: 900px;
+  background: #262626;
 }
 #nav a {
   color: white;
@@ -15,7 +16,7 @@ body {
 #nav{
   position: fixed;
   top: 0;
-  background: rgb(9, 171, 235);
+  background: #1473e6;
   width: 100vw;
   padding: 10px;
 }#footer-nav {
