@@ -1,5 +1,6 @@
 li {
   list-style: none;
+  min-width: 85px;
 }
 .slide-bar {
   position: sticky;
