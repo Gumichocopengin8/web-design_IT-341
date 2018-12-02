@@ -1,8 +1,19 @@
+li {
+  list-style: none;
+}
 .slide-bar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 100px;
+  left: 20px;
   width: 200px;
   height: 500px;
   border: solid 2px blue;
-  margin: 100px 0 0 20px;
+  background: skyblue;
+}
+.filter-item {
+  text-align: center;
+  margin: 10px;
 }
 .result { 
   display: flex;
