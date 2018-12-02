@@ -4,6 +4,8 @@
   margin: 60px 30px 10px 60px;
 }
 .pic {
+  min-width: 200px;
+  min-height: 200px;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -17,4 +19,5 @@
 }
 .text {
   font-size: 18px;
+  color: white;
 }
