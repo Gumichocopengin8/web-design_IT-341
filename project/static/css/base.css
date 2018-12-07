@@ -31,7 +31,6 @@ body {
 }
 .title {
   font-size: 30px;
-  margin-left: 20px;
   color: white;
 }
 .menu-container {
@@ -39,11 +38,11 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 0 10px 0 0;
 }
 .menu {
-  font-size: 20px;
-  margin: 0 10px;
+  font-size: 18px;
+  margin: 0 7px;
   color: white;
 }
 .videos {
@@ -62,4 +61,26 @@ body {
   margin: 10px 20px 0px 20px;
   width: 250px;
   height: 0px;
+}
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.searchbar {
+  width: 10vw;
+  margin: 0;
+  padding: 0;
+}
+.searchbutton {
+  margin: 0;
+  padding: 0;
 }
